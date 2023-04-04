@@ -1,0 +1,214 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="max-height: 450px;">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/b3.webp' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b2.jpeg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b1.webp' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b4.webp' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b5.webp' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b6.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b7.jpeg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b8.webp' %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+  </div>
+
+
+{% endblock banner-slider %}
+
+{% block information %}
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">BabyCare offers a wide range of products of babie's needs and by-produc categories.
+            Products provide high quality and safe for babies.
+
+            Firsthug offers a wide varieties of dresses for both boys and girls, and other wearings.
+            Also providing toys,feeding accessories,food items,nursery products,school supplies and health 
+            and saftey items.</small>
+    </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+<div class="container">
+    <br><br>
+      <h2 class="text-center">Baby Products</h2>
+      <br><br>
+      <div class="row container">
+          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'BY' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/tshirt.webp' %}" class="img-responsive center-block" width="250px" height="250px" alt="">
+                      <p class="drspro">Boy Fashion</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'GL' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/top_girl.webp' %}" class="img-responsive center-block" width="250px" height="250px" alt="">
+                      <p class="drspro">Girl Fashion</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'FW' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/shoe.webp' %}" class="img-responsive center-block" width="240px" height="250px" alt="">
+                      <p class="drspro">Footwear</p>
+                      <br><br>
+                  </div>
+              </a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'DP' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/diaper.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">Diapering</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'TY' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/music_toy.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">Toys</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'GR' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/stroller.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">Gear</p>
+                      <br><br>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'FD' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/food.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">Feeding</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'BP' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/oil.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">Bath Products</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'NS' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/nursery.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">Nursery Furniture</p>
+                      <br><br>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'HS' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/health.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">Health & Safety</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'BK' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/book.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">Books</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+          animation-name: none;">
+          <div class="goodnesssec buttermilk smbg">
+              <a href="{% url 'category' 'SL' %}">
+                  <div class="goodnessseccont text-center">
+                      <img src="{% static 'app/images/product/school.webp' %}" class="img-responsive center-block" alt="">
+                      <p class="drspro">School Supplies</p>
+                      <br><br>
+                  </div>
+              </a>
+          </div>
+        </div>
+      </div>
+          
+          
+  <br><br>
+  
+  
+{% endblock main-content %}
